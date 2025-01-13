@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Calculadora - CDB, LCI, LCA...</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='src/css/global.css'>
-    
+    <link rel='stylesheet' type='text/css' media='screen' href='src/css/home.css'>    
 </head>
 
 <body>
 
-    <h1>Teste</h1>
+    <header class="header-area">
+        <h1 class="title">Calculadora de Investimentos</h1>
+    </header>
+
+    <main class="page-body">
+        <form class="form">
+            <div class="input-field">
+                <label for="valorInicial">Insira o valor inicial do investimento:</label>
+                <input placeholder="R$" type="number" name="valorInicial" id="valorInicial">
+            </div>
+
+            <div class="input-field">
+                <label for="aportes">Insira os aportes mensais:</label>
+                <input placeholder="R$" type="number" name="aportes" id="aportes">
+            </div>
+
+            <div class="input-field">
+                <label for="juros">Insira a taxa de juros:</label>
+                <select name="juros" id="unidadeDeTempo">
+                    <option value="anos">Em Anos</option>
+                    <option value="meses">Em Meses</option>
+                </select>
+                <input type="number" name="juros" id="juros">
+            </div>
+
+            <button id="submit-button" type="submit">Confirmar</button>
+        </form>
+    </main>
     
-    
-    <script src=''></script>
+    <footer>
+        <nav>
+            <a href="">GitHub - Repositório</a>
+        </nav>
+    </footer>
+
+    <script src='src/js/main.js'></script>
 </body>
 
 </html>
