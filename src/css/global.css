@@ -21,6 +21,10 @@ button {
 }
 
 a {
+    text-decoration: none;
     color: white;
-    text-decoration: underline;
+}
+
+a:hover {
+    color: gray;
 }

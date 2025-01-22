@@ -1,7 +1,10 @@
+/* CABEÇALHO */
+
 .header-area {
     display: flex;
     align-items: center;
     height: 10%;
+    background: rgb(212, 212, 212);
 }
 
 .title {
@@ -9,37 +12,52 @@
     color: green;
 }
 
-
-
+/* CONTEÚDO */
 
 .page-body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     height: 75%;
     padding: 15px;
-    background-color: gray;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: fit-content;
     gap: 28px;
-    width: 380px;
-    padding: 8px;
+    padding: 12px;
     background: white;
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .input-field {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8px;
 }
+
+input, select {
+    width: 80%;
+    margin: 0 20px;
+    height: 26px;
+    border: gray solid 2px;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+label {
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
+/* RODAPÉ */
 
 footer {
     height: 15%;
     background: black;
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
